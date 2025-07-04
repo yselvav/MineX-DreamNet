@@ -4,19 +4,19 @@
 
 > **Unlocking true ownership for 350&nbsp;million Minecraft players.**
 
-MineX is a **Minecraft plugin** that seamlessly bridges Web2 gameplay with Web3 ownership and AI-driven storytelling.  
-Built for the **DreamNet Character Agent Hackathon**, it showcases how DreamNet’s webhook + agent architecture can inject dynamic NPC dialogue and quest logic into the world’s most-played game.
+MineX is a **Minecraft server project** that bridges Web2 gameplay with Web3 ownership and AI-driven storytelling. For the **DreamNet Character Agent Hackathon**, we integrated DreamNet’s webhook and API to add original, fun, and dynamic AI-powered interactions to our story mode and throughout the map. MineX is not affiliated with DreamNet outside of this hackathon.
 
 ---
 
-## ✨ Key Features
+## ✨ What is MineX?
 
-| Category | What We Built |
-| -------- | ------------- |
-| **AI Immersion** | Daisy, a whimsical AI guide, responds to player commands (`/prompt1 … /promptorange`) via DreamNet’s Agents API. Each prompt asks Daisy to generate rhyming verses, gothic omens, or colour-themed personality insights. |
-| **On-chain Ready** | The plugin architecture is wallet-ready – future work will attach a Swig smart-wallet to each player for in-game token rewards & trades. |
-| **Zero Friction** | Players join with any vanilla 1.21.6 client (PC, Console, Mobile) – no mods, no wallets required. |
-| **Quest Framework** | “Digital Garden Rescue” questline with location triggers, puzzles, and AI-generated narration. |
+MineX is a next-generation Minecraft server designed to:
+- Unlock true digital asset ownership for players by integrating on-chain wallets and asset management.
+- Provide a unique story-driven quest ("Digital Garden Rescue") with interactive NPCs and puzzles.
+- Seamlessly blend traditional Minecraft gameplay with blockchain features and AI-generated narrative.
+- Use DreamNet’s AI only for this hackathon to enhance Daisy’s character dialogue and quest flavor.
+
+Players explore the map, interact with Daisy in story mode, and encounter AI-powered events and messages as part of the quest and in various locations.
 
 ---
 
@@ -27,12 +27,8 @@ Built for the **DreamNet Character Agent Hackathon**, it showcases how DreamNet�
    IP: 170.205.30.59:25594
    Version: Minecraft 1.21.6
    ```
-2. Meet **Daisy** at spawn and follow the on-screen instructions.
-3. Trigger AI dialogue anytime:
-   * `/prompt1` … `/prompt5` – rhymes, omens & limericks
-   * `/promptblue` – positive deep-dive on the colour blue
-   * `/promptyellow` – humorous roast on yellow
-   * `/promptorange` – witty roast on orange
+2. Explore the map and follow the story prompts to meet Daisy and progress through the Digital Garden Rescue quest.
+3. Experience AI-powered dialogue and original quest content throughout the adventure.
 
 > _Gameplay trailer coming soon!_ `[![Watch the Trailer](images/trailer-thumb.png)](LINK-TO-TRAILER)`
 
@@ -40,25 +36,25 @@ Built for the **DreamNet Character Agent Hackathon**, it showcases how DreamNet�
 
 ## 🛠️ How It Works
 
-### DreamNet Integration
-
-* The plugin sends JSON to the DreamNet **Agents API** (`/user/message`).  
-* Each command crafts a bespoke prompt that includes the player’s name, guiding Daisy’s response.
-* After each call, we optionally wipe the agent’s short-term memory so every player enjoys a fresh interaction.
+### DreamNet Integration (for Hackathon)
+- Our server hosts both an **API server** and a **webhook server** to communicate with DreamNet’s platform.
+- Daisy’s in-game dialogue and certain quest events are powered by DreamNet’s AI, using webhooks and API calls.
+- Every interaction is designed to feel natural and immersive, leveraging DreamNet for creative, context-aware responses.
 
 ### Architecture
 
 ```
-┌────────────┐      /promptX         ┌────────────────────────┐
-│  Player    │ ───────────────────▶ │ MineX Plugin (Spigot)  │
-└────────────┘                      │  • Commands & Quests    │
-                                    │  • DreamNet webhooks    │
-                                    └─────────┬──────────────┘
-                                              │ REST
-                                              ▼
-                                 ┌──────────────────────────┐
-                                 │ DreamNet Agents API      │
-                                 └──────────────────────────┘
+┌────────────┐         ┌────────────────────────┐
+│  Player    │ ──────▶│ MineX Minecraft Server │
+└────────────┘         │  • Story & Quests      │
+                       │  • API Server         │
+                       │  • Webhook Server     │
+                       └─────────┬─────────────┘
+                                 │ REST/Webhook
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ DreamNet Agents API      │
+                    └──────────────────────────┘
 ```
 
 ---
@@ -67,13 +63,13 @@ Built for the **DreamNet Character Agent Hackathon**, it showcases how DreamNet�
 
 ```
 MineX/
-├── src/                 # Plugin source (Java + YAML)
+├── src/                 # Plugin/server source (Java + YAML)
 ├── build.gradle         # Gradle build (Spigot API)
 ├── README.md            # You are here 🚀
 └── .gitignore           # Ignore build artifacts & IDE files
 ```
 
-We only publish the **plugin source**, not the full game world. Clone, build, drop the JAR into any 1.21.x Spigot/Paper server and go!
+We only publish the **plugin/server source**, not the full game world. Clone, build, drop the JAR into any 1.21.x Spigot/Paper server and go!
 
 ---
 
@@ -88,10 +84,12 @@ We only publish the **plugin source**, not the full game world. Clone, build, dr
 
 ## 🤝 Credits
 
-| Role | Name |
-|------|------|
-| Founder & Lead Dev | **Yeray Selva** ([Telegram](https://t.me/YeraySelva)) |
-| Co-Founder & Game Dev | **Kevin Celiberti** |
+| Role                  | Name                                    |
+|-----------------------|-----------------------------------------|
+| Founder & Lead Dev    | **Yeray Selva** ([Telegram](https://t.me/YeraySelva)) |
+| Minecraft Developer   | **Roberto Portfidia**                   |
+| Builder               | **BreakerFinger**                       |
+| Builder               | **cvameraman**                          |
 
 Special thanks to **DreamNet** & **SendAI** for the agent platform, and to the whole hackathon crew for the inspiration.
 

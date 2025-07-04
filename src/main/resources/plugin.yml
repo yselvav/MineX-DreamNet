@@ -1,0 +1,13 @@
+name: MineX
+version: '1.1-SNAPSHOT'
+main: dev.kacperm.mineX.MineX
+api-version: '1.21'
+commands:
+  prompt1:
+  prompt2:
+  prompt3:
+  prompt4:
+  prompt5:
+  promptblue:
+  promptyellow:
+  promptorange:

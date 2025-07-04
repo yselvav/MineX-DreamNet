@@ -1,0 +1,2 @@
+Summary for ..\MineX-1.0-SNAPSHOT-all.jar
+Decompiled with CFR 0.152

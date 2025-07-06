@@ -1,6 +1,7 @@
 # Java / Gradle
 .gradle/
 build/
+run/
 out/
 !gradle/wrapper/gradle-wrapper.jar
 

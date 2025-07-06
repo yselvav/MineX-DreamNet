@@ -19,6 +19,7 @@ export const handler: Handler = async (event) => {
     return { statusCode: 403, body: 'Invalid signature' };
   }
 
+  console.log('Webhook payload:', event.body);
   const data = JSON.parse(event.body || '{}');
   const response = {
     ...data,

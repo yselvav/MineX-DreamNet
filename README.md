@@ -73,13 +73,14 @@ Visit **[MineX.gg](https://MineX.gg)** for the latest news, server IPs, and comm
 
 ```
 MineX/
-├── src/                 # Plugin/server source (Java + YAML)
-├── build.gradle         # Gradle build (Spigot API)
+├── src/                 # Minecraft **plugin** source (Java + YAML)
+├── webhook/             # Netlify Function source (TypeScript)
+├── build.gradle         # Gradle build (Spigot/Paper API)
 ├── README.md            # You are here 🚀
 └── .gitignore           # Ignore build artifacts & IDE files
 ```
 
-We only publish the **plugin/server source**, not the full game world. Clone, build, drop the JAR into any 1.21.x Spigot/Paper server and go!
+This repo ships **both** the plugin *and* the Netlify webhook—everything you need to reproduce the DreamNet integration locally. (We don’t include the full game world.) Clone, build, drop the JAR into any 1.21.x Spigot/Paper server and go!
 
 ---
 

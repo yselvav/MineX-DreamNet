@@ -1,6 +1,6 @@
 # MineX – DreamNet Character Agent Hackathon Submission
 
-![MineX Banner](images/minex-banner.png)
+![MineX Banner](images/MineX_logo.png)
 
 > **Unlocking true ownership for 350&nbsp;million Minecraft players.**
 
@@ -30,7 +30,17 @@ Players explore the map, interact with Daisy in story mode, and encounter AI-pow
 2. Explore the map and follow the story prompts to meet Daisy and progress through the Digital Garden Rescue quest.
 3. Experience AI-powered dialogue and original quest content throughout the adventure.
 
-> _Gameplay trailer coming soon!_ `[![Watch the Trailer](images/trailer-thumb.png)](LINK-TO-TRAILER)`
+### 🎬 Demo Videos
+
+[![Gameplay&nbsp;Trailer](https://img.youtube.com/vi/M-3dmY4mVWM/hqdefault.jpg)](https://youtu.be/M-3dmY4mVWM?si=Mu89EatQ8-IWserL)
+*60-second trailer that captures the high-level vision of MineX.*
+
+[![Full&nbsp;Gameplay&nbsp;Walkthrough](https://img.youtube.com/vi/IAEKAfLcz7A/hqdefault.jpg)](https://youtu.be/IAEKAfLcz7A?si=vy8qXRv403NbA1g4)
+*Long-form, unedited session covering the core quest. (Later in the map you’ll find branching choice-question encounters—also answered by AI—but we kept them out of this cut to avoid spoilers.)*
+
+Our broader roadmap (see below) brings **on-chain AI agents** to every player via smart wallets. DreamNet’s technology is a perfect fit for this, as outlined in the [MineX AI Agents spec](https://minex-solana.gitbook.io/minex-world-chain/basics/5.-ai-agents).
+
+Visit **[MineX.gg](https://MineX.gg)** for the latest news, server IPs, and community events.
 
 ---
 
@@ -89,6 +99,7 @@ We only publish the **plugin/server source**, not the full game world. Clone, bu
 | Founder & Lead Dev    | **Yeray Selva** ([Telegram](https://t.me/YeraySelva)) |
 | Minecraft Developer   | **Roberto Porfidia**                   |
 | Builder               | **BreakerFinger**                       |
+| Video Editor          | **Bacefi**                               |
 
 Special thanks to **DreamNet** & **SendAI** for the agent platform, and to the whole hackathon crew for the inspiration.
 

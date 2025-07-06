@@ -4,7 +4,7 @@
 
 > **Unlocking true ownership for 350&nbsp;million Minecraft players.**
 
-MineX is a **Minecraft server project** that bridges Web2 gameplay with Web3 ownership and AI-driven storytelling. For the **DreamNet Character Agent Hackathon**, we integrated DreamNet’s webhook and API to add original, fun, and dynamic AI-powered interactions to our story mode and throughout the map. MineX is not affiliated with DreamNet outside of this hackathon.
+MineX is a **Minecraft server project** that bridges Web2 gameplay with Web3 ownership and AI-driven storytelling. For the **DreamNet Character Agent Hackathon**, we integrated DreamNet’s webhook and API to add original, fun, and dynamic AI-powered interactions to an special story mode and throughout the map. MineX is not affiliated with DreamNet outside of this hackathon (yet).
 
 ---
 
@@ -22,7 +22,7 @@ Players explore the map, interact with Daisy in story mode, and encounter AI-pow
 
 ## 🎮 Quick Start
 
-1. **Join the public demo server** (no whitelist):
+1. **Join the DreamNet public demo server** (no whitelist):
    ```
    IP: 170.205.30.59:25594
    Version: Minecraft 1.21.6
@@ -38,7 +38,7 @@ Players explore the map, interact with Daisy in story mode, and encounter AI-pow
 
 ### DreamNet Integration (for Hackathon)
 - Our server hosts both an **API server** and a **webhook server** to communicate with DreamNet’s platform.
-- Daisy’s in-game dialogue and certain quest events are powered by DreamNet’s AI, using webhooks and API calls.
+- Daisy’s in-game dialogue and certain quest messages are powered by DreamNet’s AI, using webhooks and API calls.
 - Every interaction is designed to feel natural and immersive, leveraging DreamNet for creative, context-aware responses.
 
 ### Architecture
@@ -87,9 +87,8 @@ We only publish the **plugin/server source**, not the full game world. Clone, bu
 | Role                  | Name                                    |
 |-----------------------|-----------------------------------------|
 | Founder & Lead Dev    | **Yeray Selva** ([Telegram](https://t.me/YeraySelva)) |
-| Minecraft Developer   | **Roberto Portfidia**                   |
+| Minecraft Developer   | **Roberto Porfidia**                   |
 | Builder               | **BreakerFinger**                       |
-| Builder               | **cvameraman**                          |
 
 Special thanks to **DreamNet** & **SendAI** for the agent platform, and to the whole hackathon crew for the inspiration.
 

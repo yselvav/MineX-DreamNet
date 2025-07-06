@@ -15,6 +15,7 @@ MineX is a next-generation Minecraft server designed to:
 - Provide a unique story-driven quest ("Digital Garden Rescue") with interactive NPCs and puzzles.
 - Seamlessly blend traditional Minecraft gameplay with blockchain features and AI-generated narrative.
 - Use DreamNet’s AI only for this hackathon to enhance Daisy’s character dialogue and quest flavor.
+- Provide a **ready-made plugin + webhook template** so other Minecraft server owners can integrate DreamNet agents into their own worlds in minutes.
 
 Players explore the map, interact with Daisy in story mode, and encounter AI-powered events and messages as part of the quest and in various locations.
 

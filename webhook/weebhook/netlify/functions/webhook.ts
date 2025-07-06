@@ -27,15 +27,17 @@ export const handler: Handler = async (event) => {
 
   console.log('Webhook payload:', event.body);
   const data = JSON.parse(event.body || '{}');
-  const response = {
-    ...data,
-    text: data.eventType === 'request' ? 'Hello, how are you?' : 'I am doing well, thank you for asking.',
-    saveModified: data.eventType === 'request'
-  };
 
-  return {
-    statusCode: 200,
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(response)
-  };
+  // If this is a user request, let DreamNet handle the response by returning no text.
+  if (data.eventType === 'request') {
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ saveModified: false })
+    };
+  }
+
+  // For response or any other event types, simply acknowledge.
+  return { statusCode: 200 };
+
 };

@@ -1,11 +1,17 @@
 import { Handler } from '@netlify/functions';
 import crypto from 'crypto';
 
-function verifySignature(rawBody: string, signature: string, secret: string) {
+function verifySignature(rawBody: string, signature: string | undefined, secret: string) {
   const hmac = crypto.createHmac('sha256', secret);
   hmac.update(rawBody);
   const expected = hmac.digest('base64');
-  return crypto.timingSafeEqual(Buffer.from(signature || ''), Buffer.from(expected));
+
+  // Fast fail if header is missing or lengths differ; avoids RangeError
+  if (!signature || signature.length !== expected.length) {
+    return false;
+  }
+
+  return crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected));
 }
 
 export const handler: Handler = async (event) => {

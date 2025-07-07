@@ -33,17 +33,17 @@ Players explore the map, interact with Daisy in story mode, and encounter AI-pow
 
 ### 🎬 Demo Videos
 
-[![Gameplay&nbsp;Trailer](https://img.youtube.com/vi/M-3dmY4mVWM/hqdefault.jpg)](https://youtu.be/M-3dmY4mVWM?si=Mu89EatQ8-IWserL)
+<a href="https://youtu.be/M-3dmY4mVWM?si=Mu89EatQ8-IWserL" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/M-3dmY4mVWM/hqdefault.jpg" alt="Gameplay Trailer"></a>
 *60-second trailer that captures the high-level vision of MineX.*
 
-[![Full&nbsp;Gameplay&nbsp;Walkthrough](https://img.youtube.com/vi/IAEKAfLcz7A/hqdefault.jpg)](https://youtu.be/IAEKAfLcz7A?si=vy8qXRv403NbA1g4)
+<a href="https://youtu.be/IAEKAfLcz7A?si=vy8qXRv403NbA1g4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/IAEKAfLcz7A/hqdefault.jpg" alt="Full Gameplay Walkthrough"></a>
 *Long-form, unedited session covering the core quest. (Later in the map you’ll find branching choice-question encounters—also answered by AI—but we kept them out of this cut to avoid spoilers.)*
 
-This is the link to our [Tweet on X](https://x.com/MineXsol/status/1941931966808367572) announcing our participation — you can see some pictures there!
+This is the link to our <a href="https://x.com/MineXsol/status/1941931966808367572" target="_blank" rel="noopener noreferrer">Tweet on X</a> announcing our participation — you can see some pictures there!
 
-Our broader roadmap (see below) brings **on-chain AI agents** to every player via smart wallets. DreamNet’s technology is a perfect fit for this, as outlined in the [MineX AI Agents spec](https://minex-solana.gitbook.io/minex-world-chain/basics/5.-ai-agents).
+Our broader roadmap (see below) brings **on-chain AI agents** to every player via smart wallets. DreamNet’s technology is a perfect fit for this, as outlined in the <a href="https://minex-solana.gitbook.io/minex-world-chain/basics/5.-ai-agents" target="_blank" rel="noopener noreferrer">MineX AI Agents spec</a>.
 
-Visit **[MineX.gg](https://MineX.gg)** for the latest news, server IPs, and community events.
+Visit **<a href="https://MineX.gg" target="_blank" rel="noopener noreferrer">MineX.gg</a>** for the latest news, server IPs, and community events.
 
 ---
 
@@ -100,7 +100,7 @@ This repo ships **both** the plugin *and* the Netlify webhook—everything you n
 
 | Role                  | Name                                    |
 |-----------------------|-----------------------------------------|
-| Founder & Lead Dev    | **Yeray Selva** ([Telegram](https://t.me/YeraySelva)) |
+| Founder & Lead Dev    | **Yeray Selva** (<a href="https://t.me/YeraySelva" target="_blank" rel="noopener noreferrer">Telegram</a>) |
 | Minecraft Developer   | **Roberto Porfidia**                   |
 | Builder               | **BreakerFinger**                       |
 | Video Editor          | **Bacefi**                               |

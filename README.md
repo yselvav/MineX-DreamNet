@@ -21,15 +21,41 @@ Players explore the map, interact with Daisy in story mode, and encounter AI-pow
 
 ---
 
-## 🎮 Quick Start
+## 🎮 Quick Start: Play DreamNet Instantly!
 
-1. **Join the DreamNet public demo server** (no whitelist):
-   ```
-   IP: 170.205.30.59:25594
-   Version: Minecraft 1.21.6
-   ```
-2. Explore the map and follow the story prompts to meet Daisy and progress through the Digital Garden Rescue quest.
-3. Experience AI-powered dialogue and original quest content throughout the adventure.
+You don’t need to own Minecraft to play! Just follow these easy steps:
+
+### 1. Download SKlauncher (Free)
+- Go to the official SKlauncher website: [https://skmedix.pl/](https://skmedix.pl/)
+- Download and install SKlauncher on your computer.
+
+### 2. Launch SKlauncher in Offline Mode
+- Open SKlauncher.
+- Click on “Offline” to play without a Mojang/Microsoft account.
+
+### 3. Select the Correct Minecraft Version
+- In SKlauncher, choose or add a custom version: **1.21.6** (the server version).
+
+### 4. Join Multiplayer
+- Click on “Multiplayer” in the Minecraft main menu.
+
+### 5. Add and Join the DreamNet Server
+- Click “Add Server.”
+- Enter the following details:
+  - **Server Name:** DreamNet Demo
+  - **Server Address:** `170.205.30.59:25594`
+- Click “Done,” then select the server and click “Join Server.”
+
+---
+
+### What to Do In-Game
+
+- Explore the map and follow the story prompts to meet Daisy and progress through the Digital Garden Rescue quest.
+- Experience AI-powered dialogue and original quest content throughout your adventure.
+
+---
+
+**That’s it! Enjoy your journey in DreamNet—no Minecraft account required.**
 
 ### 🎬 Demo Videos
 

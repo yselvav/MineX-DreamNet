@@ -54,12 +54,12 @@ Visit **<a href="https://MineX.gg" target="_blank" rel="noopener noreferrer">Min
 
 | First-Minigame Helper | Resulting Hint |
 |---|---|
-| ![Allay helper](images/ALLAY_helper.png) | ![Allay reply](images/ALLAY_helper_reply.png) |
+| ![Allay helper](images/ALLAY_helper.png) | <img src="images/ALLAY_helper_reply.PNG" alt="Allay reply" width="380"/> |
 | *Step on an **Allay** statue to receive a dynamic clue about the hidden flower giving some location imput to DreamNet and getting the answer.* | *Hint text is colour-coded – your **name** and keywords like “lake” pop out.* |
 
 | Colour Picker | AI Response |
 |---|---|
-| ![Colour choose](images/Color_choose.jpg) | ![Colour reply](images/Color_choose_reply.png) |
+| ![Colour choose](images/Color_choose.jpg) | <img src="images/color_choose_reply.png" alt="Colour reply" width="380"/> |
 | *Press a coloured crystal. The prompt "What’s your favourite colour?" is sent to DreamNet along with your username.* | *Daisy riffs on your choice, guessing why **you**, with that username, picked it.* |
 
 ---

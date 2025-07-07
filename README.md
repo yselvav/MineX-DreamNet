@@ -76,9 +76,9 @@ Our set-up uses DreamNet’s **Agents API** exactly as it would run in productio
    ```
    and posts it to:
    ```
-   POST https://agents.dreamnet.ai/v1/agent/<AGENT_ID>/messages
-   Headers:  Pinata-AppId: <APP_ID>
-             Pinata-AppSecret: <APP_SECRET>
+   POST https://agents-api.doodles.app/<AGENT_ID>/user/message
+   Headers:  x-mini-app-id: <APP_ID>
+             x-mini-app-secret: <APP_SECRET>
    ```
    We call this with `HttpUtil.sendJsonAsync(...)`, so the Bukkit main thread never blocks.
 

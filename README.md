@@ -49,14 +49,57 @@ Our broader roadmap (see below) brings **on-chain AI agents** to every player vi
 
 Visit **<a href="https://MineX.gg" target="_blank" rel="noopener noreferrer">MineX.gg</a>** for the latest news, server IPs, and community events.
 
+### 🎯 Extra AI Interactions (off-camera)
+> These proof-of-concept features don’t appear in the gameplay videos but showcase how DreamNet can enrich any corner of the map.
+
+| First-Minigame Helper | Resulting Hint |
+|---|---|
+| ![Allay helper](images/ALLAY_helper.png) | ![Allay reply](images/ALLAY_helper_reply.png) |
+| *Step on an **Allay** statue to receive a dynamic clue about the hidden flower giving some location imput to DreamNet and getting the answer.* | *Hint text is colour-coded – your **name** and keywords like “lake” pop out.* |
+
+| Colour Picker | AI Response |
+|---|---|
+| ![Colour choose](images/Color_choose.jpg) | ![Colour reply](images/Color_choose_reply.png) |
+| *Press a coloured crystal. The prompt "What’s your favourite colour?" is sent to DreamNet along with your username.* | *Daisy riffs on your choice, guessing why **you**, with that username, picked it.* |
+
 ---
 
 ## 🛠️ How It Works
 
 ### DreamNet Integration (for Hackathon)
-- Our server hosts both an **API server** and a **webhook server** to communicate with DreamNet’s platform.
-- Daisy’s in-game dialogue and certain quest messages are powered by DreamNet’s AI, using webhooks and API calls.
-- Every interaction is designed to feel natural and immersive, leveraging DreamNet for creative, context-aware responses.
+Our set-up uses DreamNet’s **Agents API** exactly as it would run in production:
+
+1. **Outbound request (server → DreamNet)**  
+   The plugin builds a small JSON payload using `HttpUtil.buildJson`:
+   ```json
+   { "text": "<player prompt>", "user": "<playerName>" }
+   ```
+   and posts it to:
+   ```
+   POST https://agents.dreamnet.ai/v1/agent/<AGENT_ID>/messages
+   Headers:  Pinata-AppId: <APP_ID>
+             Pinata-AppSecret: <APP_SECRET>
+   ```
+   We call this with `HttpUtil.sendJsonAsync(...)`, so the Bukkit main thread never blocks.
+
+2. **Inbound webhook (DreamNet → Netlify → Minecraft)**  
+   DreamNet streams the assistant reply to our Netlify Function `/api/dreamnet-hook`.  
+   The function forwards the text via a WebSocket back to the Minecraft plugin, where we broadcast it with:
+   ```java
+   Bukkit.getScheduler().runTask(plugin, () -> broadcast(TextColorUtil.applyDynamicColors(msg, playerName)));
+   ```
+
+3. **Session memory & clean-up**  
+   DreamNet keeps a short-lived memory per `user` so Daisy can reference previous lines.  
+   After each quest step we call `DELETE /agent/<id>/memory/<user>` to reset context and avoid spoilers.
+
+4. **Dynamic colour pass**  
+   Before chat is shown, `TextColorUtil` highlights:
+   - the player’s name (gold & bold)
+   - the word **lake** (aqua)
+   - any colour word (red, blue, …) with its matching `ChatColor`.
+
+The result is near-instant, personalised, and visually rich AI dialogue — all powered by DreamNet under the hood.
 
 ### Architecture
 

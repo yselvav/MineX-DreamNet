@@ -34,9 +34,13 @@ Players explore the map, interact with Daisy in story mode, and encounter AI-pow
 ### 🎬 Demo Videos
 
 <a href="https://youtu.be/M-3dmY4mVWM?si=Mu89EatQ8-IWserL" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/M-3dmY4mVWM/hqdefault.jpg" alt="Gameplay Trailer"></a>
+**▶ Click to play**
+
 *60-second trailer that captures the high-level vision of MineX.*
 
 <a href="https://youtu.be/IAEKAfLcz7A?si=vy8qXRv403NbA1g4" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/IAEKAfLcz7A/hqdefault.jpg" alt="Full Gameplay Walkthrough"></a>
+**▶ Click to play**
+
 *Long-form, unedited session covering the core quest. (Later in the map you’ll find branching choice-question encounters—also answered by AI—but we kept them out of this cut to avoid spoilers.)*
 
 This is the link to our <a href="https://x.com/MineXsol/status/1941931966808367572" target="_blank" rel="noopener noreferrer">Tweet on X</a> announcing our participation — you can see some pictures there!

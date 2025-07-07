@@ -39,6 +39,8 @@ Players explore the map, interact with Daisy in story mode, and encounter AI-pow
 [![Full&nbsp;Gameplay&nbsp;Walkthrough](https://img.youtube.com/vi/IAEKAfLcz7A/hqdefault.jpg)](https://youtu.be/IAEKAfLcz7A?si=vy8qXRv403NbA1g4)
 *Long-form, unedited session covering the core quest. (Later in the map you’ll find branching choice-question encounters—also answered by AI—but we kept them out of this cut to avoid spoilers.)*
 
+This is the link to our [Tweet on X](https://x.com/MineXsol/status/1941931966808367572) announcing our participation — you can see some pictures there!
+
 Our broader roadmap (see below) brings **on-chain AI agents** to every player via smart wallets. DreamNet’s technology is a perfect fit for this, as outlined in the [MineX AI Agents spec](https://minex-solana.gitbook.io/minex-world-chain/basics/5.-ai-agents).
 
 Visit **[MineX.gg](https://MineX.gg)** for the latest news, server IPs, and community events.

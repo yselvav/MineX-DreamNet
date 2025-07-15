@@ -2,6 +2,11 @@
 
 ![MineX Banner](images/MineX_logo.png)
 
+> 🏆 **Prize Winner!** MineX secured a prize at the **DreamNet Character Agent Hackathon** thanks to this plugin.  
+> Check the official announcement on [X](https://x.com/MineXsol/status/1943784345170587664).  
+> Huge thanks to the DreamNet team for organizing such an inspiring event!
+
+
 > **Unlocking true ownership for 350&nbsp;million Minecraft players.**
 
 MineX is a **Minecraft server project** that bridges Web2 gameplay with Web3 ownership and AI-driven storytelling. For the **DreamNet Character Agent Hackathon**, we integrated DreamNet’s webhook and API to add original, fun, and dynamic AI-powered interactions to an special story mode and throughout the map. MineX is not affiliated with DreamNet outside of this hackathon (yet).
@@ -176,7 +181,7 @@ This repo ships **both** the plugin *and* the Netlify webhook—everything you n
 | Founder & Lead Dev    | **Yeray Selva** (<a href="https://t.me/YeraySelva" target="_blank" rel="noopener noreferrer">Telegram</a>) |
 | Minecraft Developer   | **Roberto Porfidia**                   |
 | Builder               | **BreakerFinger**                       |
-| Video Editor          | **Bacefi**                               |
+| Tester & Developer & Video Editor | **Borja García** |
 
 Special thanks to **DreamNet** & **SendAI** for the agent platform, and to the whole hackathon crew for the inspiration.
 
